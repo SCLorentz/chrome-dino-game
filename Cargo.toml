@@ -1,7 +1,7 @@
 [package]
-name = "plain_render_lib"
+name = "chrome_dino_game"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 authors = ["S.C. Lorentz <113468900+SCLorentz@users.noreply.github.com>"]
 description = "A chrome dino game clone made with JS and WASM"
 repository = "https://github.com/yourgithubusername/hello-wasm"
@@ -16,7 +16,7 @@ serde-wasm-bindgen = "0.4"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
-path = "src/build/lib.rs"
+path = "src/lib.rs"
 
 [dependencies.web-sys]
 version = "0.3.4"

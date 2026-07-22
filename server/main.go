@@ -17,10 +17,10 @@ func main() {
 		port = "8080" // valor padrão
 	}
 
-    log.Printf("The server has successfully initialized at http://localhost:8080:%s\n", port)
+    log.Printf("The server has successfully initialized at http://localhost:%s\n", port)
 
 	// File handler
-	fileServer := http.FileServer(http.Dir("../frontend"))
+	fileServer := http.FileServer(http.Dir("../static"))
     http.Handle("/", fileServer)
 
 	// Start the server
